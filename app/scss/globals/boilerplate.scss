@@ -19,4 +19,18 @@ body {
 
 .container {
   width: rem(1200);
+  margin: 0 auto;
 }
+
+/*--- HEADER START
+-------------------------------------------------- */
+.header {
+  background-color: var(--white);
+
+  &logo {
+    padding-left: rem(10);
+  }
+}
+
+/*--- HEADER END
+-------------------------------------------------- */
