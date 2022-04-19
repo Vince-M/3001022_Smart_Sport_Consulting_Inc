@@ -35,10 +35,6 @@ body {
   padding: 0 rem(10);
 }
 
-.flex {
-  display: flex;
-}
-
 ol, ul {
   list-style: none;
 }
@@ -66,15 +62,139 @@ a:hover {
   text-decoration: none;
 }
 
-/*--- HEADER START
--------------------------------------------------- */
-// .header {
-//   background-color: var(--white);
+// FLEXBOX STYLES
+.flex {
+  display: flex;
 
-//   &logo {
-//     padding-left: rem(10);
-//   }
-// }
+  &-jc-sb {
+    justify-content: space-between;
+  }
 
-/*--- HEADER END
--------------------------------------------------- */
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+}
+
+// VISIBILITY 
+.hide-for-mobile {
+  // hide for tablet and mobile devices
+  @include breakpoint-down(medium) {
+    display: none;
+  }
+}
+
+.hide-for-desktop {
+  // hide for desktop
+  @include breakpoint-up(large) {
+    display: none;
+  }
+}
+
+.section-break {
+  border: none;
+  border-top: rem(2) solid var(--darkgreen);
+  margin: 2.5rem 0;
+}
+
+/* Social Media
+/* -------------------------------------*/
+.social {
+
+  &__wrapper {
+    width: 70%;
+    margin: 0 auto;
+
+    @include breakpoint-down (medium) {
+      width: 100%;
+    }
+
+    // @include breakpoint-down (small) {
+    //   width: 100%;
+    // }
+  }
+
+  &__header {
+    text-align: center;
+
+    &--name {
+      font-weight: 700;
+    }
+
+    @include breakpoint-down (small) {
+      h5 {
+        width: 60%;
+        margin: 0 auto rem(20) auto;
+      }
+    }
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+    flex-wrap: wrap;
+
+    @include breakpoint-down (small) {
+      display: block;
+      width: 100%;
+      margin-bottom: rem(32);
+    }
+
+    &--left,
+    &--right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 45%;
+      text-align: center;
+      padding-top: rem(70);
+
+      @include breakpoint-down (medium) {
+        padding-top: rem(16);
+        margin-bottom: rem(32);
+      }
+
+      @include breakpoint-down (small) {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: rem(16);
+      }
+    }
+
+    // &--left {
+    //   width: 45%;
+    //   display: flex;
+    //   flex-direction: column;
+    //   text-align: center;
+    // }
+
+    // &--right {
+    //   display: flex;
+    //   justify-content: center;
+    //   align-items: center;
+    //   flex-direction: column;
+    //   width: 45%;
+    //   text-align: center;
+    // }
+
+    p {
+      color: var(--darkgreen);
+    }
+  }
+}
+
+.contact,
+.facebook {
+  color: var(--darkgreen);
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
