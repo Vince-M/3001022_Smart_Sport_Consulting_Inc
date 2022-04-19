@@ -1,1 +1,101 @@
 @use '../util' as *;
+
+/* Footer
+/* -------------------------------------*/
+.footer {
+  height: auto;
+  background-color: var(--lightergreen);
+  position: relative;
+  display: flex;
+  flex-direction: row;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: rem(40);
+
+    @include breakpoint-down(small) {
+      width: 100%;
+    }
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+
+    @include breakpoint-down(small) {
+      flex-direction: column;
+    }
+
+    &--right {
+
+      @include breakpoint-down (small) {
+        margin-top: rem(48);
+      }
+    }
+
+    &--contact {
+      display: flex;
+      flex-direction: column;
+
+      .address {
+        margin-bottom: rem(20);
+      }
+
+      .contact-prefix {
+        color: var(--darkblue);
+        font-weight: 700;
+      }
+
+      .digital a {
+        color: var(--darkblue);
+        font-weight: 700;
+
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+
+      p {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  h3 {
+    color: var(--darkblue);
+    text-transform: uppercase;
+    font-size: rem(38);
+  }
+
+  .copyright {
+    margin: rem(16) auto;
+
+    @include breakpoint-down (medium) {
+      margin-top: rem(16);
+      width: 90%;
+      text-align: center;
+    }
+
+    p {
+      font-size: rem(14);
+
+      a {
+        color: var(--black);
+        font-weight: 700;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+}

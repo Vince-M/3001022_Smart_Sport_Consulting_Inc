@@ -1,15 +1,1 @@
 @use '../util' as *;
-
-.card {
-  padding: rem(20);
-}
-
-.toggle {
-
-  &__button {
-    width: rem(16);
-    height: rem(20);
-    background-color: var(--darkBlue);
-    border-radius: 50%;
-  }
-}
