@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet"> 
 
-  <link rel="stylesheet" href="/dist/style.css">
+  <link rel="stylesheet" href="./dist/style.css">
   <script defer src="/dist/script.js"></script>
   
 </head>
@@ -28,7 +28,7 @@
       =================================================== -->
       <nav class="nav flex flex-jc-sb flex-ai-c">
         <a href="index.html" class="header__logo">
-          <img src="img/smartSport_headLogo_240x60.png" width="240px" height="60px" alt="Smart Sport Consulting Inc.">
+          <img src="img/smart_sport_240x60.svg" width="240px" height="60px" alt="Smart Sport Consulting Inc.">
         </a>
 
         <a id="btnHamburger" href="#" class="hamburger header__toggle ">
@@ -58,17 +58,39 @@
 
     <!-- HERO
     =================================================== -->
-    <section class=""hero feature-image>
+    <section class="hero feature-image" role="banner" data-type="background" data-speed="2">
+      <div class="hero__headline">
+        <img class="hero__logo" src="img/indexHeroLogo_361x93.svg" alt="Smart Sport Logo" width="541">
+        <div class="btn__hero">
+          <a href="#">About Smart Sport</a>
+        </div> <!-- btn__hero -->
+      </div> <!-- hero__headline -->
 
-    </section>
+      <div style="background: url(./img/ssc_indexHero_1920x1080-min.jpg) no-repeat; background-position: center top;
+      background-size: cover; left: 50%; padding: 0; position: relative;-webkit-transform: translateX(-50%);transform: translateX(-50%);
+      margin-top: 0px; margin-bottom: 0px; height: 100vh;overflow: hidden; clear: both;" >
+      </div> <!-- hero jumbo-image -->
+
+    </section> <!-- hero feature-image -->
     <!-- ============================================== -->
 
     <!-- CERTIFICATION
     =================================================== -->
-    <section class="cert full__width">
+    <section class="cert full__width fullWidth__section">
       <div class="container">
+        <div class="inner-container">
+            
+          <div class="fullWidth__section--text">
+            <div class="fullWidth__section--innerWrapper fullWidth__section--campsText">
+              <h2>Certification</h2>
+              <p>The Smart Sport Certification program ensures the administrative function of your organization is optimized to deliver sustained progress on your institutional mandate.</p>
+              <p>Learn more about Certification</p>
+            </div> <!-- fullWidth__section--innerWrapper -->
+          </div> <!-- fullWidth__section--text -->
 
+      </div> <!-- inner-container -->
       </div>
+
 
     </section>
     <!-- ============================================== -->

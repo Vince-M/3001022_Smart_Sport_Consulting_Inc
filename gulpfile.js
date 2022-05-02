@@ -57,3 +57,5 @@ function watchTask() {
 
 // Default Gulp Task
 exports.default = series(scssTask, jsTask, browserSyncServe, watchTask);
+
+// gulp default to watch files
