@@ -4,10 +4,12 @@
 /* -------------------------------------*/
 .footer {
   height: auto;
-  background-color: var(--darkBlue);
+  background: linear-gradient(to top, var(--darkBlue), var(--lightBlue));
   position: relative;
   display: flex;
   flex-direction: row;
+  height: rem(260);
+  margin-top: rem(60);
 
   &__wrapper {
     display: flex;
@@ -99,3 +101,29 @@
   }
 
 }
+
+.site {
+
+  &__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+
+    p,
+    a {
+      font-family: var(--font-text);
+      color: var(--white);
+      font-size: rem(14.5);
+      font-weight: 400;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+  
+}  
