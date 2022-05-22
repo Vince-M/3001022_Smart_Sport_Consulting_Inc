@@ -189,6 +189,7 @@ a:hover {
 
     &--blog {
       padding-right: rem(100);
+      position: relative;
 
       @include breakpoint-down(small) {
         padding-right: 0;
@@ -198,6 +199,7 @@ a:hover {
 
     &--news {
       padding-left: rem(100);
+      position: relative;
 
       @include breakpoint-down(small) {
         padding-left: 0;
@@ -318,6 +320,15 @@ a:hover {
   }
 }
 
+
+/* Icons
+/* -------------------------------------*/
+
+.iconBlog {
+  position: absolute;
+  top: rem(32);
+  right: rem(96);
+}
 
 
 
